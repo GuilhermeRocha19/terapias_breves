@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+    
+      <div class="imgheader">
+        <a href=""><img src="imagens/Logo_Roxo_SiteEscola.webp" alt="" /></a>
+      </div>
+      <div class="links">
+        <a href="#" data-target="fundo1">Inicio</a>
+        <a href="#" data-target="sobre">Sobre</a>
+        <a href="#" data-target="terapias">Terapias</a>
+        <a href="#">Contatos</a>
+      </div>
+    </header>
+
+    <div id="fundo1" class="fundo1">
+      <h1 style="color: white">Diga SIM, reescreva a sua história!</h1>
+    </div>
+
+  
+    <main id="sobre">
+      <div  class="fototerapeuta">
+        <img src="imagens/terapeuta.jpg" alt="" />
+      </div>
+
+      <div class="quemsou">
+        <h1>QUEM SOU!</h1>
+
+        <p>
+          Eu estou, nesta fase da jornada, como Adelaide Pinheiro Machado.
+          Trabralhei como pedagoga por muitos anos, mas sempre estudei o ser
+          humano de maneira geral(corpo, mente, espirito e emoção) isso
+          simplesmente me fascina.<br />Com todo este encantamento era
+          inevitável que eu migrasse para o movimento terapéutico. Sou uma
+          espiritualista, minha busca é Deus e a verdade que SÓ ELE pode revelar
+          . Atualmente utilizo as ferramentas de EFT, Constelação Famíliar e
+          Hipnose Quântica, com o objetivo de ser instrumento para que as
+          pessoas possam identificar e ressignificar suas " ervas daninhas " e
+          se religarem.
+        </p>
+      </div>
+      <div  ></div>
+      <hr />
+
+      <div id="terapias" class="terapias">
+        <h1>TERAPIAS BREVES</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dolorum.
+          Quia cum deserunt dolores praesentium voluptate! Nostrum corporis
+          numquam aperiam? Doloremque laborum sunt molestiae quod ratione ipsam
+          similique officiis quas.
+        </p>
+      </div>
+      <div class="terapias2">
+        <h2 onmouseenter="eft()">EFT</h2>
+        <h2 onmouseenter="fam()">Constelação Familiar</h2>
+        <h2 onmouseenter="quan()">Hipnose quântica</h2>
+      </div>
+      <div id="res"><p>Clique nas opções acima para ler!</p></div>
+
+      <hr />
+
+      <div class="div-padrao">
+        <div class="imagem"></div>
+
+        <div class="form">
+          <div class="preencher">
+            <div class="inscricao">
+              <h2>Inscrição para Terapias</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                necessitatibus blanditiis natus quis, eligendi totam ducimus
+                possimus nemo, ipsa ipsam dolorum rerum vitae consequuntur ut
+                quia deserunt voluptatum voluptatem quasi.
+              </p>
+              <br />
+            </div>
+            <form action="cadastrar.php" method="post">
+              <div class="input">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+              </div>
+
+              <div class="input">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required />
+              </div>
+
+              <div class="input">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="input">
+                <label for="telefone">Telefone</label>
+                <input
+                  type="text"
+                  placeholder="(99)999999999"
+                  name="telefone"
+                  id="telefone"
+                  required
+                />
+              </div>
+
+              <div class="input">
+                <label for="telefone">Trabalho</label>
+                <select name="trabalho" id="trabalho" required>
+                  <option value="">Seleciona</option>
+                  <option value="1">Atendimento Breve</option>
+                  <option value="2">EFT</option>
+                  <option value="3">Constelação Familiar</option>
+                </select>
+              </div>
+
+              <button class="buttonSubmit" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 15px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+header {
+  background-color: rgba(232, 175, 232, 0.678);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  flex-wrap: wrap;
+  top: 0;
+  width: 100%;
+  min-height: 80px;
+  width: 100%;
+
+}
+
+.imgheader {
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.links a{
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8%;
+  margin: 5px;
+}
+.links a:hover{
+  background-color: rgb(216, 2, 216);
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8%;
+  margin: 5px;
+}
+
+.fundo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-image: url(imagens/borboleta.jpg);
+  min-height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.fundo1 h1 {
+  font-size: 50px;
+  background-color: rgb(128, 0, 128, 0.2);
+}
+h1{
+  color: purple;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+.fototerapeuta {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.fototerapeuta > img {
+  border-radius: 100%;
+  height: 250px;
+}
+
+.quemsou {
+  display: flex;
+  justify-content: center;
+}
+.quemsou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.quemsou > p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.terapias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.terapias > p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.4em;
+  text-align: center;
+}
+.terapias2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  text-align: center;
+  min-width: 250px;
+  min-height: 250px;
+}
+#res{
+  min-width: 250px;
+  min-height: 250px;
+}
+.div-padrao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  min-height: 800px;
+  background-image: url(imagens/6502013.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.imagm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-image: url(imagens/6502013.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.inscricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%; 
+  margin: auto; 
+  gap: 15px;
+  text-align: center; 
+  line-height: 1.5em;
+}
+
+
+
+.form {
+  font-size: 1.5rem; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  place-content: center;
+  max-width: 80%; 
+  width: 400px; 
+  background-color: rgba(158, 115, 198, 0.5);
+  padding: 5vw;
+  margin: 10px;
+  border-radius: 6px;
+  color: white;
+  border: 2px solid rgba(232, 175, 232, 0.8); 
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+  padding: 10px;
+}
+.input label {
+  font-weight: bold;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.input input {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+}
+.terapias2 h2 {
+  max-width: 150px;
+  text-align: center;
+  line-height: 1.5;
+  transition: font-size 0.3s ease;
+}
+
+.terapias2 h2:hover {
+  color: purple;
+  font-size: 1.6em;
+}
+#res {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+#res > h2 {
+  font-size: 50px;
+}
+#res > p {
+  max-width: 800px;
+  font-size: 22px;
+}
+
+select {
+  padding: 10px;
+  font-size: medium;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px; 
+}
+select option {
+  padding: 10px;
+}
+select option:first-child {
+  color: #999;
+}
+
+.buttonSubmit{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.buttonSubmit:hover{
+  background-color: purple;
+  color: white;
+}
+
+
+
+
+
+  @media (max-width: 600px) {
+    .imgheader {
+      display: none; /* Ocultando a imagem em telas menores que 768 pixels */
+    }
+  
+    #header {
+      align-items: center; /* Centralizando os links no meio do header */
+    }
+  }
