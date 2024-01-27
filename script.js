@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.style.background = "rgba(232, 175, 232)";
     }
   });
-
+ 
   //Rolar Suavemente ao clicar em link
   function scrollToId(targetId, offset = 0) {
     var targetElement = document.getElementById(targetId);
@@ -54,5 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Função para deixar
-document.addEventListener("DOMContentLoaded", function () {});

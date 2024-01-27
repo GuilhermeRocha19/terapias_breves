@@ -21,7 +21,7 @@ header {
   width: 100%;
   min-height: 80px;
   width: 100%;
-
+ 
 }
 
 .imgheader {
@@ -36,7 +36,7 @@ header {
   padding: 10px;
   margin-left: auto;
 }
-
+ 
 .links a{
   background-color: purple;
   color: white;
