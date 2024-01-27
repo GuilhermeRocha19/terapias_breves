@@ -54,3 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+function playAudio() {
+  var audio = document.getElementById('backgroundAudio');
+  audio.style.display = 'block';
+  audio.play();
+}

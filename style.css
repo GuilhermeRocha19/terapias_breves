@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@ p{
   margin: 15px;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 
 }
 header {
@@ -87,10 +89,16 @@ main {
   justify-content: center;
   margin-top: 100px;
   margin-bottom: 40px;
+  
 }
+
 .fototerapeuta > img {
   border-radius: 100%;
   height: 250px;
+  transition: transform 0.1s ease;
+}
+.fototerapeuta > img:hover {
+  transform: scale(1.05); 
 }
 
 .quemsou {
@@ -117,6 +125,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 25px;
 }
 
@@ -139,6 +148,9 @@ main {
 #res{
   min-width: 250px;
   min-height: 250px;
+}
+#res h2{
+  color: purple;
 }
 .div-padrao {
   display: flex;
@@ -169,6 +181,7 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 80%; 
+  width: 100%;
   margin: auto; 
   gap: 15px;
   text-align: center; 
@@ -190,7 +203,11 @@ main {
   margin: 10px;
   border-radius: 6px;
   color: white;
-  border: 2px solid rgba(232, 175, 232, 0.8); 
+  border: 2px solid rgba(232, 175, 232, 0.8);
+  transition: transform 0.3s ease; 
+}
+.form:hover {
+  transform: scale(1.01); 
 }
 .input {
   display: flex;
@@ -260,6 +277,90 @@ select option:first-child {
   background-color: purple;
   color: white;
 }
+.contato-fora{
+  margin-top: 70px;
+  font-size: 1.5rem;
+  color: purple;
+  text-align: center;
+}
+.contato {
+
+  padding: 20px;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato h2, .contato h3 {
+  font-size: 1.5rem;
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.contato-informa {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contato-informa a {
+  color: purple;
+}
+
+.contato-informa div {
+  flex: 1;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+
+#play{
+  
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+#play:hover {
+  background-color: #8a2be2;
+}
+audio {
+  display: none; 
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.footer {
+  background-color: rgba(232, 175, 232);
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  max-width: 100%;
+
+
+}
 
 
 
@@ -267,10 +368,10 @@ select option:first-child {
 
   @media (max-width: 600px) {
     .imgheader {
-      display: none; /* Ocultando a imagem em telas menores que 768 pixels */
+      display: none; 
     }
   
     #header {
-      align-items: center; /* Centralizando os links no meio do header */
+      align-items: center;
     }
   }
